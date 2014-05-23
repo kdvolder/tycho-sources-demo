@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/hello.world.feature_1.0.0.qualifier.jar" id="hello.world.feature" version="1.0.0.qualifier"/>
+   <!-- the line below is the tricky bit. THe 'url' attribut has to be exactly right. Otherwise build will succeed without errors,
+        but the sources feature won't actually be included -->
+   <feature url="features/hello.world.feature_1.0.0.qualifier-sources-feature.jar" id="hello.world.feature.source" version="1.0.0.qualifier"/>
+</site>
